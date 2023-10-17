@@ -1,0 +1,38 @@
+<div class="container mt-4">
+    <div *ngIf="isLoading" class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div *ngIf="!isLoading">
+    <div class="d-flex justify-content-between">
+        <h2>Total Tasks: {{ tasks.length }}</h2>
+        <button class="btn btn-primary" (click)="openForm()">Add New Task</button>
+        <button class="btn btn-primary" (click)="calculateFactorial()">Calculate Factorial</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Factorial</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td>{{ task.taskID }}</td>
+                <td>{{ task.taskIDFactorial || 'N/A' }}</td>
+                <td>{{ Category[task.category] }}</td>
+                <td>{{ task.description }}</td>
+                <td>{{ task.dueDate | date }}</td>
+                <td [attr.Priority]="Priority[task.priority]">{{ Priority[task.priority] }}</td>
+                <td>{{ Status[task.status] }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

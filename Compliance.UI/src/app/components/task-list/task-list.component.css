@@ -1,0 +1,72 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333; 
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #f0f0f0; 
+}
+
+.table thead th {
+    padding: 15px;
+    border-bottom: 2px solid #d4d4d4;
+    color: #555; 
+    text-transform: uppercase; 
+    font-size: 0.9em;
+}
+
+.table tbody tr:hover {
+    background-color: #e7e7e7;
+}
+
+.table tbody td {
+    padding: 10px 15px;
+    color: #666; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 600; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f44336; 
+    color: white;
+}
+
+/* Low Priority */
+[Priority="Low"] {
+    color: #4CAF50 !important;
+   
+}
+
+/* Medium Priority */
+[Priority="Medium"] {
+    color: #FFC107 !important;
+}
+
+/* High Priority */
+[Priority="High"] {
+    color: #f44336 !important;
+}
