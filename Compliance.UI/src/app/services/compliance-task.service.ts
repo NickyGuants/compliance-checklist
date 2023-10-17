@@ -20,6 +20,7 @@ export class ComplianceTaskService {
     return this.http.post<ComplianceTask>(`${this.apiUrl}/task`, task);
   }
 
+  //TODO: Implement streaming to support displaying the results as each item's data processing is completed.
   calculateFactorial(): Observable<ComplianceTask[]> {
     return this.http.get<ComplianceTask[]>(`${this.apiUrl}/tasks/factorial`);
   }

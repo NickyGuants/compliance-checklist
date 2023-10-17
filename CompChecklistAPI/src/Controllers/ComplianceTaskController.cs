@@ -42,6 +42,8 @@ public class ComplianceTaskController: ControllerBase
         }
     }
 
+    // This combines the results and sends them to frontend together instead of one by one.
+    //TODO: Implement streaming to support displaying the results as each item's data processing is completed.
     [HttpGet("tasks/factorial")]
     public IActionResult CalculateFactorials()
     {
