@@ -11,7 +11,7 @@ The **Compliance Checklist** is a simple application that allows users to visual
 
 - **Backend:** Built with .NET 7 and ASP.NET core.
 
-## NB: The Docker set up is not fully configured.
+## NB: The Docker setup is not fully configured.
 
 To get started, follow the instructions below to set up your environment.
 
@@ -22,9 +22,10 @@ The application resides in the `compliance-checklist` directory, which contains 
 - **CompChecklistAPI**: Houses the .NET backend.
     - **src**: The source code for the API.
     - **tests**: Contains tests for the API.
-- **Compliance.UI**: Contains the Angular frontend.
+- **Compliance.UI**: Contains the Angular front end.
 
 ## Building and Running the API
+0. Clone this repository.
 
 1. Navigate to the API source directory:
     ```bash
